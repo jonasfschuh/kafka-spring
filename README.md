@@ -18,8 +18,6 @@ Both communicate with Kafka through Spring Boot to create and access topics and 
 - [Configuration](#configuration)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
-- [Authentication](#authentication)
-- [Database](#database)
 - [Contributing](#contributing)
 - [Screenshots](#screenshots)
 
@@ -39,40 +37,32 @@ git clone https://github.com/jonasfschuh/kafka-spring.git
 
 ## Usage
 
-1. Start the application with Maven
-2. The API will be accessible at http://localhost:8080
+1. Start docker containers, through the Docker folder
+
+```bash
+docker-compose up
+```
+
+To stop docker containers, use:
+```bash
+docker-compose down
+```
+2. Configure Offset Explorer for Kafka (9092) and Zookeeper (2181) ports.
+
+Note:
+Kakfa can be accessed directly via IntelliJ
+
+3. Start the application ms-kafka-producer with Maven or through the Services tab in intelliJ.
+4. The producer API will be accessible at http://localhost:8080/
+5. Start the application ms-kafka-consumer with Maven or through the Services tab in intelliJ.
 
 ## API Endpoints
 
 The API provides the following endpoints:
 
 ```markdown
-GET /product - Retrieve a list of all products. (all authenticated users)
-
-POST /product - Register a new product (ADMIN access required).
-
-POST /auth/login - Login into the App
-
-POST /auth/register - Register a new user into the App
+POST /api/save-order - Register an event in Kafka. In this case, a purchase order.
 ```
-
-## Authentication
-
-The API uses Spring Security for authentication control. The following roles are available:
-
-```
-USER -> Standard user role for logged-in users.
-ADMIN -> Admin role for managing partners (registering new partners).
-```
-To access protected endpoints as an ADMIN user, provide the appropriate authentication credentials in the request header.
-
-Authorization type is Bearer Token.
-
-## Database
-
-The project utilizes [MySQL](https://www.mysql.com/) as the database. 
-
-It is necessary to create a schema named "auth" or change the schema name in the "application.properties" file.
 
 ## Contributing
 
@@ -85,20 +75,3 @@ When contributing to this project, please follow the existing code style, [commi
 Register as Admin Role
 ![Register as Admin](https://github.com/kenzor1979/auth-api/blob/main/img/registerAsAdmin.gif?raw=true&sanitize=true)
 
-Register as User Role
-![Register as User](https://github.com/kenzor1979/auth-api/blob/main/img/registerAsUserRole.gif?raw=true&sanitize=true)
-
-Login
-![Login](https://github.com/kenzor1979/auth-api/blob/main/img/login.gif?raw=true&sanitize=true)
-
-Authorization
-![Authorization](https://github.com/kenzor1979/auth-api/blob/main/img/authorization.gif?raw=true&sanitize=true)
-
-Post
-![post](https://github.com/kenzor1979/auth-api/blob/main/img/post.gif?raw=true&sanitize=true)
-
-MySQL table products
-![MySQL products](https://github.com/kenzor1979/auth-api/blob/main/img/MySQLproducts.png?raw=true&sanitize=true)
-
-MySQL table users
-![MySQL users](https://github.com/kenzor1979/auth-api/blob/main/img/MySQLusers.png?raw=true&sanitize=true)
