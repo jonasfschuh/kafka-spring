@@ -95,7 +95,7 @@ Offset explorer
 Postman
 ![](https://github.com/jonasfschuh/kafka-spring/blob/master/docs/img/postman.gif?raw=true&sanitize=true)
 
-ms-kafka-consumer
+Ms-kafka-consumer - details 
 ![](https://github.com/jonasfschuh/kafka-spring/blob/master/docs/img/ms-kafka-consumer.gif?raw=true&sanitize=true)
 
 Offset explorer - details
