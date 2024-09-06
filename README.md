@@ -28,12 +28,14 @@ Both communicate with Kafka through Spring Boot to create and access topics and 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/kenzor1979/auth-api.git
+git clone https://github.com/jonasfschuh/kafka-spring.git
 ```
 
 2. Install dependencies with Maven
 
-3. Install [MySQL](https://www.mysql.com/)
+3. Install [Docker](https://docs.docker.com/get-started/get-docker/)
+4. Install [Offset Explorer](https://offsetexplorer.com/download.html)
+5. Install [Postman](https://www.postman.com/downloads/)
 
 ## Usage
 
