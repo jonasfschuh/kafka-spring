@@ -1,4 +1,4 @@
-# Authentication API
+# Kafka Spring
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
@@ -7,9 +7,10 @@
 ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
-This project is an API built using **Java, Java Spring, MySQL as the database, and Spring Security and JWT for authentication control.**
+This project uses Event-Driven Architecture with Java 17, Spring Boot 3 and Kafka.
 
-The API demonstrate how to configure Authentication and Authorization in Spring application using Spring Security.
+Two microservices were created, ms-kafka-producer and ms-kafka-consumer. 
+Both communicate with Kafka through Spring Boot to create and access topics and partitions.
 
 ## Table of Contents
 
