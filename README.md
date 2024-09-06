@@ -54,6 +54,17 @@ Kakfa can be accessed directly via IntelliJ
 
 3. Start the application ms-kafka-producer with Maven or through the Services tab in intelliJ.
 4. The producer API will be accessible at http://localhost:8080/
+5. Access Postman and post a request.
+
+Example
+```JSON
+{
+    "code": "2008", 
+    "productName": "Toyota Camry XLE V6",
+    "value": "60000.00"
+}
+```
+
 5. Start the application ms-kafka-consumer with Maven or through the Services tab in intelliJ.
 
 ## API Endpoints
@@ -72,6 +83,21 @@ When contributing to this project, please follow the existing code style, [commi
 
 ## Screenshots
 
-Register as Admin Role
-![Register as Admin](https://github.com/kenzor1979/auth-api/blob/main/img/registerAsAdmin.gif?raw=true&sanitize=true)
+Starting containers 
+![](https://github.com/jonasfschuh/kafka-spring/blob/master/docs/img/containers.jpg?raw=true&sanitize=true)
+
+Starting ms-producer
+![](https://github.com/jonasfschuh/kafka-spring/blob/master/docs/img/ms-kafka-consumer.gif?raw=true&sanitize=true)
+
+Offset explorer
+![](https://github.com/jonasfschuh/kafka-spring/blob/master/docs/img/offset_explorer.gif?raw=true&sanitize=true)
+
+Postman
+![](https://github.com/jonasfschuh/kafka-spring/blob/master/docs/img/postman.gif?raw=true&sanitize=true)
+
+ms-kafka-consumer
+![](https://github.com/jonasfschuh/kafka-spring/blob/master/docs/img/ms-kafka-consumer.gif?raw=true&sanitize=true)
+
+Offset explorer - details
+![](https://github.com/jonasfschuh/kafka-spring/blob/master/docs/img/offset_explorer_details.gif?raw=true&sanitize=true)
 
