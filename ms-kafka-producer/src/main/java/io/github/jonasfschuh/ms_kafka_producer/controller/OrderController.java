@@ -16,6 +16,6 @@ public class OrderController {
     @PostMapping(path = "/api/save-order")
     public ResponseEntity<String> SaveOrder(@RequestBody OrderData order) {
         eventService.addEvent("SaveOrder", order);
-        return ResponseEntity.ok("Success");
+        return ResponseEntity.ok("Success");S
     }
 }
